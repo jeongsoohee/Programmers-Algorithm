@@ -10,7 +10,7 @@ import Foundation
     0 < my_string 길이 < 100
  */
 
-
+//맨 처음 시도
 func solution(_ my_string:String) -> String {
     var result: String = ""
     let myString: String = my_string.lowercased()
@@ -20,6 +20,20 @@ func solution(_ my_string:String) -> String {
         result += String(alphabet)
     }
     
+    return result
+}
+
+// 주석, 코드 길이 다듬어보기
+func solution1(_ my_string:String) -> String {
+    //반환할 변수
+    var result: String = ""
+    
+    //매개변수를 소문자로 변환시켜 담을 변수
+    let myString: String = my_string.lowercased()
+    
+    //문자열을 오름차순으로 정렬하여 반환할 변수에 담는다.
+    result += myString.sorted()
+   
     return result
 }
 
