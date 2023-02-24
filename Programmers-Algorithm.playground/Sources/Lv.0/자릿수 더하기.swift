@@ -27,3 +27,20 @@ private func solution(_ n:Int) -> Int {
     
     return result
 }
+
+
+private func solution1(_ n:Int) -> Int {
+    //반환할 변수 생성
+    var result: Int = 0
+    //상수 n을 활용하기 위해 변수에 담기
+    var divisionN: Int = n
+    //반복되는 조건이 있는 것이아니라 자릿수가 1이 될 때까지 반복해줘야함으로 while문 사용!
+    while divisionN > 0 {
+        //10으로 %하게되면 나머지에 맨 마지막자리수가 나오게 되는데 그 값을 계속 더해주기
+        result += divisionN % 10
+        //계속 같은 값을 더해주면 안되니까 %한 후
+        //나누기10을 하여 1자리씩 똑같이 없애서 담아주는 것을 반복하기
+        divisionN /= 10
+    }
+    return result
+}
