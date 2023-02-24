@@ -12,7 +12,7 @@ import Foundation
  
  */
 
-func solution(_ n:Int) -> Int {
+private func solution(_ n:Int) -> Int {
     //숫자 n을 문자열로 바꾸게되면
     //for문을 돌릴 때 숫자 하나의 값을 꺼낼 수 있게 되니까 문자열로 변경하기!
     var str: String = String(n)

@@ -13,7 +13,7 @@ import Foundation
      1 ≤ t ≤ 15
  */
 
-func solution(_ n:Int, _ t:Int) -> Int {
+private func solution(_ n:Int, _ t:Int) -> Int {
     // 반환할 변수
     var result: Int = n
     // t시간 만큼이 흘렀을 때의 2배씩 증가하는 세균증식 수를 구하는 것이기 때문에

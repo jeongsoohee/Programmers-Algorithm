@@ -11,7 +11,7 @@ import Foundation
  */
 
 //맨 처음 시도
-func solution(_ my_string:String) -> String {
+private func solution(_ my_string:String) -> String {
     var result: String = ""
     let myString: String = my_string.lowercased()
     
@@ -24,7 +24,7 @@ func solution(_ my_string:String) -> String {
 }
 
 // 주석, 코드 길이 다듬어보기
-func solution1(_ my_string:String) -> String {
+private func solution1(_ my_string:String) -> String {
     //반환할 변수
     var result: String = ""
     
@@ -37,7 +37,7 @@ func solution1(_ my_string:String) -> String {
     return result
 }
 
-func solution2(_ my_string:String) -> String {
+private func solution2(_ my_string:String) -> String {
     
     //반환할 변수
     var result: String = ""
@@ -52,7 +52,7 @@ func solution2(_ my_string:String) -> String {
 }
 
 // map을 이용해보기
-func solution3(_ my_string:String) -> String {
+private func solution3(_ my_string:String) -> String {
     //반환할 변수
     var result: String = ""
     //스위프트 문법에맞는 카멜케이스형식의 변수

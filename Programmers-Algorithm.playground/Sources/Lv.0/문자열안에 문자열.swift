@@ -13,7 +13,7 @@ import Foundation
  
  */
 
-func solution(_ str1:String, _ str2:String) -> Int {
+private func solution(_ str1:String, _ str2:String) -> Int {
     
   //str1에 str2가 포함되어있다면 1을 리턴 : 아니라면 2를 리턴하기
   return str1.contains(str2) ? 1 : 2

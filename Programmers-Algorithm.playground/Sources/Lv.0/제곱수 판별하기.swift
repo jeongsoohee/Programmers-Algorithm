@@ -12,7 +12,7 @@ import Foundation
  
  */
 
-func solution(_ n:Int) -> Int {
+private func solution(_ n:Int) -> Int {
     //매개변수로 들어온 제곱수까지 판별해보기 위해 1...n까지 for문 돌리기
     for item in 1...n {
         // 1 ~ n 까지 정수를 제곱하며 n과 같다면 1을 return
