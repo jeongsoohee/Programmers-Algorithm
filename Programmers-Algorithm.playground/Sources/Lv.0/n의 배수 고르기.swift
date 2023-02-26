@@ -28,3 +28,10 @@ private func solution(_ n:Int, _ numlist:[Int]) -> [Int] {
     
     return result
 }
+
+private func solution1(_ n:Int, _ numlist:[Int]) -> [Int] {
+    //filter를 사용해 n의 배수만 골라낼 수 있다!
+    //1줄일때에는 return키워드 생략이 가능하다!
+   return numlist.filter{ $0 % n == 0 }
+    
+}
