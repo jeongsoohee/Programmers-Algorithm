@@ -37,3 +37,12 @@ private func solution1(_ s1:[String], _ s2:[String]) -> Int {
    //그 배열의 count를 세기!
    return s1.filter{ s2.contains($0) }.count
 }
+
+
+private func solution2(_ s1:[String], _ s2:[String]) -> Int {
+    
+    //.intersection함수는 .에 해당하는 집합과 지정된 시퀀스 모두에 공통적인 요소가 포함된 새 집합을 반환하는데
+    //공통적인 요소가 포함되어있는 새 집합에 count를 세기!
+    //이 방법은 생각하지 못했는데 풀이를 보고나서 이런 방법도있구나 생각했다!
+    return Set(s1).intersection(Set(s2)).count
+ }
