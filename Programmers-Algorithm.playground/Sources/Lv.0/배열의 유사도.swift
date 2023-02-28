@@ -29,3 +29,11 @@ private func solution(_ s1:[String], _ s2:[String]) -> Int {
     //위의 반복문을 다 거쳤는데도 같은 요소가 없다면 count의 값은 자동으로 0이 반환되기
     return count
 }
+
+private func solution1(_ s1:[String], _ s2:[String]) -> Int {
+
+   //filter고차함수를 이용해 {}안에 s2.contains($0)조건이 참이라면
+   //참에 해당하는 배열을 새로 리턴하게되는데
+   //그 배열의 count를 세기!
+   return s1.filter{ s2.contains($0) }.count
+}
