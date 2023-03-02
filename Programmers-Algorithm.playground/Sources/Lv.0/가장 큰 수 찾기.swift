@@ -15,7 +15,9 @@ import Foundation
 
 private func solution(_ array:[Int]) -> [Int] {
     //배열을 오름차순으로 정렬 후 마지막에있는 요소를 담기
+    // var maxNumber: array.max()!로 가장 큰 수를 찾을 수 있다!
     guard let maxNumber = array.sorted().last else { return [] }
+    
     //마지막 요소가 앞에서부터 array 배열의 몇번째에있는지 담기
     let index = array.firstIndex(of: maxNumber)!
     // 두 개를 담아서 리턴
