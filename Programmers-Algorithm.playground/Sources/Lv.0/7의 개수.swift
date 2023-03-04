@@ -31,3 +31,13 @@ private func solution(_ array:[Int]) -> Int {
     }
     return result
 }
+
+private func solution1(_ array:[Int]) -> Int {
+    //반환 할 변수 생성
+    var result: Int = 0
+    //array에서 [String]로 반환 후 .joined()로 배열 요소를 합치면 String로 바뀌게 되고
+    //filter로 "7"이 해당 되는 것만 남기고나서 count를 세기
+    result = array.map{ String($0) }.joined().filter{ String($0) == "7" }.count
+    
+    return result
+}
