@@ -18,7 +18,7 @@ import Foundation
 
 private func solution(_ message:String) -> Int {
     //공백도 하나의 count로 세기 때문에 message의 count를 적용
-   var result =  message.count * 2
+    let result = message.count * 2
     
     return result
    

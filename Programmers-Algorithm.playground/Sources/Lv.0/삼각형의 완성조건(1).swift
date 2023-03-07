@@ -21,7 +21,7 @@ private func solution(_ sides:[Int]) -> Int {
     let side: [Int] = sides.sorted()
     //가장 첫번째 요소와 두번째 요소를 더했을 때
     //마지막 요소(가장 큰 수)보다 두개의 더한 값이 크다면 2를 반환하고 아니라면 1을 리턴하기
-    var result: Int = side[0] + side[1] > side[2] ? 1 : 2
+    let result: Int = side[0] + side[1] > side[2] ? 1 : 2
     
     return result
 }

@@ -15,7 +15,7 @@ import Foundation
 private func solution(_ n:Int) -> Int {
     //숫자 n을 문자열로 바꾸게되면
     //for문을 돌릴 때 숫자 하나의 값을 꺼낼 수 있게 되니까 문자열로 변경하기!
-    var str: String = String(n)
+    let str: String = String(n)
     //반환 할 변수 생성하기
     var result: Int = 0
     
