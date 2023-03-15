@@ -15,7 +15,7 @@ import Foundation
  
  */
 
-private func solution(_ numbers:String) -> Int {
+private func solution(_ numbers:String) -> Int64 {
     //strNumer에서 해당 문자열과 일치하는 경우 해당 숫자를 담아서 -> Int로 변환 후 반환 할 변수
     var result: String = ""
     //for문에서 문자 하나씩을 담아서 해당 문자열(숫자)을 포함하는지 여부를 체크할 변수
@@ -56,5 +56,5 @@ private func solution(_ numbers:String) -> Int {
         }
     }
     //문자열로 이루어진 숫자를 Int형태로 변환 후 반환하기
-    return Int(result) ?? 0
+    return Int64(result) ?? 0
 }
