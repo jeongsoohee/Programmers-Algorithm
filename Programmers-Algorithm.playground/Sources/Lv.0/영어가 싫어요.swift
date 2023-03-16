@@ -58,3 +58,37 @@ private func solution(_ numbers:String) -> Int64 {
     //문자열로 이루어진 숫자를 Int형태로 변환 후 반환하기
     return Int64(result) ?? 0
 }
+
+
+private func solution1(_ numbers:String) -> Int64 {
+    //딕셔너리를 생성해서 키에 해당하는 벨류값을 result에 담을 것임!
+    var dic: [String : String] = [
+        "zero": "0",
+        "one": "1",
+        "two": "2",
+        "three": "3",
+        "four": "4",
+        "five": "5",
+        "six": "6",
+        "seven": "7",
+        "eight": "8",
+        "nine": "9"
+    ]
+    //딕셔너리의 키와 일치하는 벨류값을 담아서 반환할 변수
+    var result: String = ""
+    //numbers에서 문자 하나씩을 체크하며 딕셔너리 키와 맞는지 체크할 변수
+    var strNumber: String = ""
+    //for문으로 문자 하나씩 꺼내기
+    for num in numbers { // o, n, e ...
+        //문자 하나씩을 strNumber에 담으면서
+        strNumber += String(num)
+        //strNumber이 딕셔너리의 키들중에 포함되는 것이 있다면
+        if dic.keys.contains(strNumber) {
+            //키값을 서브스크립트 문법으로 실행시킴으로써 -> 키값에 해당하는 벨류값을 result에 담아주기
+            result += dic[strNumber]!
+            //담겨진다면 다음 문자도 똑같이 체크해야되기때문에 빈문자열로 만들기
+            strNumber = ""
+        }
+    }
+    return Int64(result)!
+}
